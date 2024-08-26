@@ -1,0 +1,136 @@
+.formacao {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.formacao-titulo {
+    word-break: break-all;
+    font-size: 75px;
+    width: 350px;
+    line-height: 1;
+
+}
+
+.formacao-paragrafo {
+    width: 40ch;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.formacoes {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 24px;
+}
+
+.formacoes-caixa {
+    background-color: wheat;
+    display: grid;
+    gap: 10px;    
+    padding: 25px;
+    height: 135px;
+    align-content: space-between;
+    position: relative;
+    border-radius: 4px;
+}
+
+.formacoes-caixa::before {
+    content: "";
+    width: 6px;
+    height: 30px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 54px;
+    left: -6px;
+}
+
+.formacoes-caixa p {
+    font-size: 17px;
+    width: 15ch;
+}
+
+.formacoes-caixa h2 {
+    font-size: 20px;
+    width: 15ch;
+}
+
+.caixa-divisao {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 50px 0px;
+}
+
+.cursos h3 {
+    font-size: 16px;
+    grid-column: 1/-1;
+    padding-bottom: 10px;
+    color: gray;
+    position: relative;
+}
+
+.cursos h3::before {
+    content: "";
+    background: url(/img/cursos.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    position: absolute;
+    left: -40px;
+    top: -5px;
+}
+
+.cursos p {
+    font-size: 17px;
+}
+
+.cursos-horas {
+    text-align: right;
+}
+
+.idiomas {
+    display: grid;
+    grid-template-rows: 28px 20px 20px;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.idiomas h3 {
+    font-size: 16px;
+    grid-column: 1/-1;
+    color: gray;
+    position: relative;
+}
+
+.idiomas h3::before {
+    content: "";
+    background: url(/img/idiomas.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    z-index: 3;
+    position: absolute;
+    left: -40px;
+    top: -5px;
+}
+
+.idiomas p {
+    font-size: 17px;
+    height: 20px;
+}
+
+.idiomas span {
+    color: red;
+}

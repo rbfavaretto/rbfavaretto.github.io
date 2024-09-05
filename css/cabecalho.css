@@ -2,41 +2,42 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    max-width: 1200px;
+    padding: 1.25rem 2.5rem;
+    max-width: 75rem;
     margin: 0 auto;
-    margin-bottom: 60px;
-
+    margin-bottom: 3.75rem;
 }
 
 .cabecalho ul {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .cabecalho a {
-    padding: 10px 10px;
+    padding: 0.625rem 0.625rem;
     text-decoration: none;
     color: black;
+    background-color: #f5f5f5;
+    font-size: 1.25rem;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 43.75rem) {
     .cabecalho {
         display: grid;
         justify-content: center;
         justify-items: center;
-        gap: 30px;
+        gap: 1.875rem;
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 28.125rem) {
     .cabecalho {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
     
     .cabecalho ul {
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 2.5rem;
         text-align: center;
         justify-content: center;
     }

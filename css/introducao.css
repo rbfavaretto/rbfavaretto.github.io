@@ -1,12 +1,12 @@
 .introducao {
-    max-width: 1200px;
+    max-width: 75rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 20px 40px;
-    gap: 150px;
+    margin-bottom: 3.75rem;
+    padding: 1.25rem 2.5rem;
+    gap: 9.375rem;
 }
 
 .introducao img {
@@ -14,9 +14,9 @@
 }
 
 .introducao h1 {
-    font-size: 70px;
+    font-size: 4.375rem;
     line-height: 1;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     position: relative;
     width: 13ch;
 }
@@ -26,37 +26,44 @@
     display: block;
     background: url(../img/detalhe.svg) no-repeat center;
     position: absolute;
-    height: 128px;
-    width: 128px;
-    top: -35px;
-    left: -40px;
+    height: 8rem;
+    width: 8rem;
+    top: -2.1875rem;
+    left: -2.5rem;
     z-index: -1;
     
 }
 
 .introducao p {
-    font-size: 20px;
+    font-size: 1.25rem;
+    color: #525252;
 }
 
-@media(max-width: 950px) {
+@media (max-width: 62.5rem) {
     .introducao h1 {
-        font-size: 50px;
+        font-size: 3.75rem;
+    }
+}
+
+@media(max-width: 59.375rem) {
+    .introducao h1 {
+        font-size: 3.125rem;
     }
     .introducao h1::before {
-        height: 10px;
-        width: 40px;
-        left: 3px;
-        top: -20px;
+        height: 0.625rem;
+        width: 2.5rem;
+        left: 0.1875rem;
+        top: -1.25rem;
     }
     .introducao p {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .introducao img {
         width: 80%;
     }
 }
 
-@media(max-width: 770px) {
+@media(max-width: 48.125rem) {
     .introducao img {
         display: none;
     }
@@ -66,12 +73,17 @@
     }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 28.125rem) {
     .introducao h1 {
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
     
     .introducao p {
-        font-size: 14px;
+        font-size: 0.875rem;
+    }
+
+    .cabecalho {
+        gap: 3.125rem;
+        margin: 1.25rem;
     }
 }
